@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibDuck
 {
-    public interface IQuackble
+    public class MuteQuack : IQuackBehavior
     {
-        string quack();
+        public string quack()
+        {
+            return "..." + this.GetType();
+        }
     }
 }

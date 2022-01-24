@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibDuck
 {
-    public interface IFlyable
+    public class Squeak : IQuackBehavior
     {
-        string fly();
+        public string quack()
+        {
+            return "Пи пи пи" + this.GetType();
+        }
     }
 }

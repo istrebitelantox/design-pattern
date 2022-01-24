@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace LibDuck
 {
-    public class RedheadDuck : Duck, IFlyable, IQuackble
+    public class RedheadDuck : Duck, IFlyBehavior, IQuackBehavior
     {
+        
         public override string Display()
         {
+            flyBehavior = new FlyWithWings();
             return "Display" + this.GetType();
+
         }
 
         public string fly()

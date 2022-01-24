@@ -22,13 +22,13 @@ namespace SolDuck
             {
                 Console.WriteLine(krya.Swim());
                 Console.WriteLine(krya.Display());
-                if(krya is IFlyable)
+                if(krya is IFlyBehavior)
                 {
-                    Console.WriteLine((krya as IFlyable).fly());
+                    Console.WriteLine((krya as IFlyBehavior).fly());
                 }
-                if(krya is IQuackble)
+                if(krya is IQuackBehavior)
                 {
-                    Console.WriteLine((krya as IQuackble).quack());
+                    Console.WriteLine((krya as IQuackBehavior).quack());
                 }
                 Console.WriteLine();
             }

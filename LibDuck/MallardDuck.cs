@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibDuck
 {
-    public class MallardDuck : Duck, IFlyable, IQuackble
+    public class MallardDuck : Duck, IFlyBehavior, IQuackBehavior
     {
         public override string Display()
         {
