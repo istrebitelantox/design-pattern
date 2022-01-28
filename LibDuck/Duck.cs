@@ -16,7 +16,7 @@ namespace LibDuck
         }
         public string Display()
         {
-            return "Display" + this.GetType() + " " + this.flyBehavior.fly() + " " + this.quackBehavior.quack();
+            return "Display\t" + this.GetType() + " \n" + this.flyBehavior.fly() + "\n " + this.quackBehavior.quack();
         }
         public void setQuackBehavior(IQuackBehavior qb)
         {
@@ -24,7 +24,7 @@ namespace LibDuck
         }
         public string Swim()
         {
-            return "Буль буль буль" +" "+ this.GetType();
+            return "Буль буль буль\t" +" "+ this.GetType();
 
         }
         public string fly()

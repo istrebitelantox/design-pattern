@@ -10,7 +10,7 @@ namespace LibDuck
     {
         public string quack()
         {
-            return "..." + this.GetType();
+            return "...\t" + this.GetType();
         }
     }
 }

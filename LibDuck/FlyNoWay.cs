@@ -10,7 +10,7 @@ namespace LibDuck
     {
         public string fly()
         {
-            return "..." + this.GetType();
+            return "...\t" + this.GetType();
         }
     }
 }
