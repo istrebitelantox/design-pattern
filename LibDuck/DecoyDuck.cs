@@ -8,9 +8,11 @@ namespace LibDuck
 {
     public class DecoyDuck : Duck 
     {
-        public override string Display()
+        public DecoyDuck()
         {
-            return "Display" + this.GetType();
+            flyBehavior = new FlyNoWay();
+            quackBehavior = new MuteQuack();
+            //return "Display" + this.GetType();
         }
     }
 }
